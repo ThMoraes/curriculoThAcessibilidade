@@ -1,0 +1,386 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* barra de rolagem */
+body{
+	background:url(img/backgroundTH.png) repeat-x fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    background-position: center;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}  
+body::-webkit-scrollbar-track {
+    background: #708090;
+    border-left: 1px solid #b0c4ded0;     
+}  
+body::-webkit-scrollbar-thumb {
+    background-color: #1E90FF;  
+    border-radius: 20px;     
+    border: 3px solid #000;
+}
+
+/*topo*/
+.topo{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 7px 0px;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    border-right: solid 2px #b0c4de65;
+    border-bottom: solid 2px #b0c4de65;
+}
+.botaoTopo{
+    border-right: solid 2px #b0c4de65;
+    margin: auto 5px;
+}
+#nomeBotaoMenu,#nomeBotaoAcessibilidade{
+    font-size: 30px;
+}
+.nomeTopo{
+    color: #1E90FF;
+    font-size: 35px;
+}
+
+/* botão menu */
+.botaoMenu{
+    font-weight: bolder;
+    color: #87CEFA;
+    padding: 0px 2px;
+    margin-right: 2px;
+    background-color: #000000;
+    border: #000000 solid 1px;
+    cursor: pointer;
+}
+.botaoMenuOver{
+    font-weight: bolder;
+    color: #000000;
+    padding: 0px 2px;
+    margin-right: 2px;
+    border-radius: 50%;
+    background-color: #87CEFA;
+    border: #000000 solid 1px;
+    cursor: pointer;
+}
+.botaoMenuClose{
+    font-weight: bolder;
+    color: #87CEFA;
+    padding: 0px 2px;
+    margin-right: 2px;
+    background-color: #000000;
+    border: #000000 solid 1px;
+    cursor: pointer;
+}
+.botaoMenuClose:hover{
+    padding: 0px 2px;
+    margin-right: 2px;
+    color: #000000;
+    background-color: red;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* botão Acessibilidade */
+.conteudoBotaoAcessibilidade{
+    margin: auto 5px;
+    margin-top: 5px;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    padding: 5px;
+}
+.botaoAcessibilidade{
+    color: #87CEFA;
+    margin-right: 2px;
+    background-color: #000000;
+    border: #000000 solid 1px;
+    cursor: pointer;
+}
+.botaoAcessibilidadeFechar{
+    color: red;
+    margin-right: 2px;
+    background-color: #000000;
+    border: #000000 solid 1px;
+    cursor: pointer;
+}
+
+.acessibilidade{
+    display: none;
+}
+.acessibilidadeMostrar{
+    display: flex;
+    padding-top: 54px;
+    height: 100vh;
+    width: 100%;
+    background-color: #1E90FF; 
+}
+
+.acessibilidadeConteudos{
+    margin-top: 15px;
+    display: flex;
+}
+
+/* menu */
+.menu{
+    display: none;
+}
+.menuMostrar{
+    display: flex;
+    padding-top: 54px;
+    height: 100vh;
+    width: 100%;
+    background-color: #1E90FF; 
+}
+.menuConteudos{
+    margin-top: 15px;
+}
+.menuConteudo{
+    padding: 5px;
+}
+.conteudoNomeMenuConteudo{
+    padding: 5px 5px;
+    padding-left: 20px;
+    display: flex;
+}
+.conteudoNomeMenuConteudoHover{
+    background-color: #87CEFA;
+    padding: 5px 5px;
+    padding-left: 7px;
+    margin-left: 25px;
+    border-radius: 12px 50px 50px 12px;
+}
+.nomeMenuConteudo{
+    font-size: 20px;
+    color: #000000;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+.iconeMenu{
+    color: #000000;
+}
+
+/*geral*/
+.conteudos{
+    background-color: rgba(255, 255, 255, 0.742);
+    margin: auto;    
+}
+.conteudosOcultar{
+    display: none;
+}
+
+.conteudo{
+    padding: 150px 40px;
+}
+.descricaoConteudo, .conteudoTopico{
+    margin: 20px 10px;
+    margin-left: 25px;
+}
+
+/*conteudoInformacoesPessoal*/
+#conteudoInformacoesPessoal{
+    display: flex;
+}
+#informacoesPessoal1{
+    margin: auto 10px;
+}
+    .nomeDono{
+        font-size: 45px;
+        padding-bottom: 10px;
+    }
+    .descriacaoPessoal{
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    .nomeInformacao{
+        font-size: 27px;
+        padding-top: 20px;
+    }
+    .descricaoPerfilProfissional{
+        font-size: 20px;
+        padding: 5px 0px;
+        text-indent: 30px;
+        text-align: justify;
+    }
+
+#informacoesPessoal2{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+    #fotoDono{
+        width: 70%;
+        height: auto;
+        padding: 10px;
+        border-radius: 25px;
+    }
+
+
+/*conteudoRedes*/
+#topicoRedes{
+    display: flex;
+    justify-content: space-evenly;
+}
+.rede{
+    text-align: center;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.nomeLink{
+    color: #000;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration: underline #1E90FF 3px;
+}
+.nomeLink:hover{
+    margin: 5px 0px;
+}
+.imgRede{
+    border-radius: 5px;
+}
+
+/*conteudoEscolaridade*/
+.escolaridade{
+    margin-top: 15px;
+}
+.descricaoEscolaridade{
+    margin: 3px 0px 3px 5px;
+}
+
+/*conteudoExperiencia*/
+.experiencia{
+    margin-top: 15px;
+}
+.descricaoExperiencia{
+    margin: 3px 0px 3px 5px;
+}
+
+/*conteudoCurso*/
+.curso{
+    margin-top: 10px;
+}
+
+/*conteudoCertificado*/
+.nomeCertificado{
+    color: #000000;
+    text-decoration: underline #1E90FF 3px;
+}
+.conteudoNomeCertificados{
+    padding: 5px 0px;
+}
+.conteudoNomeCertificados:hover{
+    padding: 6px 3px;
+}
+
+/*conteudoConhecimentos*/
+#topicoConhecimentos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.conhecimento{
+    margin: 3px 0px 3px 5px;
+}
+
+/*conteudoCompetencias*/
+#topicoCompetencias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.competencia{
+    margin: 3px 0px 3px 5px;
+}
+
+/*conteudoDownload*/
+.download{
+    text-align: center;
+}
+#botaoImprimir{    
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 5px 20px;
+    margin: 30px 10px;
+    color: #ffffff;
+    background-color: #1E90FF;
+    border: #1E90FF 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* botão topo */
+#conteudoBotaoTopo{
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    padding: 5px;
+}
+#botaoInicioPagina{
+    color: rgba(255, 255, 255, 0.542);
+    font-size: 28px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.494);
+    border-radius: 10px;
+}
+#botaoInicioPagina:hover{
+    color: #000;    
+    background-color: rgba(0, 0, 0, 0.694);
+}
+
+
+@media print{
+    body{
+        background:  #ffffff;
+    }
+    #conteudoBotao{
+        display: none;
+    }
+
+    hr, .topo, .menu, #informacoesPessoal2, #perfilProfissional, .descricaoPerfilProfissional, #conteudoRedes, #conteudoDownload, .conteudoBotao{
+        display: none;
+    }
+    .conteudo{
+        padding: 2px 20px;
+    }
+    .nomeCertificado{
+    text-decoration: none;
+}
+}

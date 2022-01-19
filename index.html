@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pteudobr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo | Thiago de Lima Souza Moraes</title>
+    <link rel="stylesheet" type="text/css" href="style.css" id="css">
+	<link rel="icon" href="img/logoTH.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+
+        <section class="topo">
+            <div class="botaoTopo">
+                <button class="botaoMenu" id="botaoMenu" onclick="abrirFecharMenu()" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                    <span class="material-icons" id="nomeBotaoMenu">menu</span>
+                </button>   
+            </div>
+
+            <div class="conteudoNomeTopo">
+                <h1 class="nomeTopo">Currículo</h1>
+            </div>
+            
+            <div class="conteudoBotaoAcessibilidade">
+                <button class="botaoAcessibilidade" id="botaoAcessibilidade" onclick="acessibilidadeConteudo()">
+                    <span class="material-icons" id="nomeBotaoAcessibilidade">settings_accessibility</span>
+                </button>   
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <nav class="conteudoMenu" id="conteudoMenu">
+                <ul class="menuConteudos">
+                    <li class="menuConteudo" id="menuConteudo1" onclick="menuConteudo()">
+                        <a href="#conteudoInformacoesPessoal" class="conteudoNomeMenuConteudo">
+                            <span class="material-icons iconeMenu" id="iconeMenu1">account_circle</span>
+                            <span class="nomeMenuConteudo" id="nomeMenu1">Informações Pessoais</span>
+                        </a>
+                    </li>
+                    <li class="menuConteudo" id="menuConteudo2" onclick="menuConteudo()">
+                        <a href="#conteudoRedes" class="conteudoNomeMenuConteudo">
+                            <span class="material-icons iconeMenu" id="iconeMenu2">public</span>
+                            <span class="nomeMenuConteudo" id="nomeMenu2">Redes</span>
+                        </a>
+                    </li>
+                    <li class="menuConteudo" id="menuConteudo3" onclick="menuConteudo()">
+                        <a href="#conteudoEscolaridade" class="conteudoNomeMenuConteudo">
+                            <span class="material-icons iconeMenu" id="iconeMenu3">school</span>
+                            <span class="nomeMenuConteudo" id="nomeMenu3">Escolaridade</span>
+                        </a>
+                    </li>
+                    <li class="menuConteudo" id="menuConteudo4" onclick="menuConteudo()">
+                        <a href="#conteudoExperiencia" class="conteudoNomeMenuConteudo">
+                            <span class="material-icons iconeMenu" id="iconeMenu4">work</span>
+                            <span class="nomeMenuConteudo" id="nomeMenu4">Experiência</span>
+                        </a>
+                    </li>
+                    <li class="menuConteudo" id="menuConteudo5" onclick="menuConteudo()">
+                        <a href="#conteudoCursos" class="conteudoNomeMenuConteudo">
+                            <span class="material-icons iconeMenu" id="iconeMenu5">class</span>
+                            <span class="nomeMenuConteudo" id="nomeMenu5">Cursos</span>
+                        </a>
+                    </li>
+                    <li class="menuConteudo" id="menuConteudo6" onclick="menuConteudo()">
+                        <a href="#conteudoCertificados" class="conteudoNomeMenuConteudo">
+                            <span class="material-icons iconeMenu" id="iconeMenu6">class</span>
+                            <span class="nomeMenuConteudo" id="nomeMenu6">Certificados</span>
+                        </a>
+                    </li>
+                    <li class="menuConteudo" id="menuConteudo7" onclick="menuConteudo()">
+                        <a href="#conteudoConhecimentos" class="conteudoNomeMenuConteudo">
+                            <span class="material-icons iconeMenu" id="iconMenu7">engineering</span>
+                            <span class="nomeMenuConteudo" id="nomeMenu7">Conhecimentos e Ferramentas</span>
+                        </a>
+                    </li>
+                    <li class="menuConteudo" id="menuConteudo8" onclick="menuConteudo()">
+                        <a href="#conteudoCompetencias" class="conteudoNomeMenuConteudo">
+                            <span class="material-icons iconeMenu" id="iconeMenu8">psychology</span>
+                            <span class="nomeMenuConteudo" id="nomeMenu8">Competências</span>
+                        </a>
+                    </li>
+                    <li class="menuConteudo" id="menuConteudo9" onclick="menuConteudo()">
+                        <a href="#conteudoDownload" class="conteudoNomeMenuConteudo">
+                            <span class="material-icons iconeMenu" id="iconeMenu9">download_for_offline</span>
+                            <span class="nomeMenuConteudo" id="nomeMenu9">Download do Curriculo</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="acessibilidade" id="acessibilidade">
+            <nav class="conteudoAcessibilidade" id="conteudoAcessibilidade">
+                <ul class="acessibilidadeConteudos">
+                    <li class="acessibilidadeConteudo" id="acessibilidadeConteudo1" onclick="altoContraste()">
+                        <span class="material-icons iconeAcessibilidade" id="iconeAcessibilidade1">contrast</span>
+                        <span class="nomeAcessibilidadeConteudo" id="nomeAcessibilidade1">Alto Contraste</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+            
+        <section class="conteudos" id="conteudosInformacoes">
+
+            <section class="conteudo" id="conteudoInformacoesPessoal">
+                <div id="informacoesPessoal1">
+                    <h1 class="nomeDono">Thiago de Lima Souza Moraes</h1>
+                    <p class="descriacaoPessoal"><b>Endereço: </b>R. Apeiba - Parque Fluminense, Belford Roxo - RJ, 26190-150</p>
+                    <p class="descriacaoPessoal"><b>Nacionalidade: </b>Brasileiro</p>
+                    <p class="descriacaoPessoal"><b>Estado Civil: </b>Solteiro</p>
+                    <p class="descriacaoPessoal"><b>Data de Nascimento: </b>24/04/1998</p>
+                    <p class="descriacaoPessoal"><b>Telefones para Contato: </b>(21) 99834-1590</p>
+                    <p class="descriacaoPessoal"><b>E-mail: </b>thiagodelima7@gmail.com / t.moraes@unigranrio.com.br</p>
+
+                    <h3 class="nomeInformacao" id="perfilProfissional">Perfil profissional:</h3>
+                    <p class="descricaoPerfilProfissional">Sou um profissional com facilidade no aprendizado, podendo assim contribuir para o bom fluxo do trabalho realizado pela empresa. Disponibilidade total de horário e motivação para realizar da melhor forma possível as tarefas a mim designadas.</p>
+                    <p class="descricaoPerfilProfissional">Prezo pela intercomunicação entre os colegas de equipe para melhor andamento do serviço e maior agilidade ao executar ações.</p>
+                </div>
+
+                <div id="informacoesPessoal2">
+                    <img src="img/Apresentacao.jpeg" id="fotoDono" alt="Foto do perfil" title="Foto do perfil">
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="conteudo" id="conteudoRedes">
+                <div id="nomeConteudoRedes">
+                    <h2 class="nomeInformacao" id="perfilRedes">Redes Sociais:</h2>
+                </div>
+                <ul  class="conteudoTopico" id="topicoRedes">                    
+                    <li class="rede" id="rede1"><a href="https://www.linkedin.com/in/thiago-de-lima-souza-moraes-a7093b1ba/" target="_blank" class="link"><img src="img/Qr/qr-linkedin.png" alt="Código QR Linkdin" title="Código QR Linkdin" height="110px" class="imgRede"><br><span class="nomeLink">Linkedin</span></a></li>
+                    <li class="rede" id="rede2"><a href="https://github.com/TMoraes2021" target="_blank" class="link"><img src="img/Qr/qr-linkedin.png" alt="Código QR Github" title="Código QR Github" height="110px" class="imgRede"><br><span class="nomeLink">Github</span></a></li>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="conteudo" id="conteudoEscolaridade">
+                <h2 class="nomeInformacao" id="informacoes2">Escolaridade:</h2>
+                <div class="descricaoConteudo" id="descricaoConteudoEscolaridade">
+                    <p class="escolaridade"><b>Ensino médio - Técnico em administração</b></p>
+                    <p class="descricaoEscolaridade">Colégio Casimiro de Abreu - conclusão em 2015.</p>
+                    <p class="escolaridade"><b>Graduação - Sistemas de Informação</b></p>
+                    <p class="descricaoEscolaridade">Universidade UNIGRANRIO - previsão de conclusão em 2025.</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="conteudo" id="conteudoExperiencia">
+                <h2 class="nomeInformacao" id="informacoes3">Experiência profissional:</h2>
+                <div class="descricaoConteudo" id="descricaoConteudoExperiencia">
+                    <p class="experiencia"><b>Exército Brasileiro - 9º Pelotão de Polícia </b>(Março/2017 - Janeiro/2018)</p>
+                    <p class="descricaoExperiencia" id="cargo"><b>Cargo: </b>Soldado</p>
+                    <p class="descricaoExperiencia" id="atuacao"><b>Atuação: </b>Cumprimento do serviço militar, atuando nas áreas de TI e administrativa. Realizando instalação de software, manutenção de computador e impressora e com arquivamento de pastas.</p>
+
+                    <p class="experiencia"><b>UNIGRANRIO - Núcleo de Educação a Distância </b>(Fevereiro/2018 - Janeiro/2019)</p>
+                    <p class="descricaoExperiencia" id="cargo"><b>Cargo: </b>Jovem Aprendiz</p>
+                    <p class="descricaoExperiencia" id="atuacao"><b>Atuação: </b>Atuação na área de TI, realizando instalação de software, manutenção de computadores e impressoras. Na área administrativa realizando entregas, recebimentos e arquivamento de documentos.</p>
+
+                    <p class="experiencia"><b>UNIGRANRIO - Núcleo de Educação a Distância </b>(Janeiro/2019 - Atualmente)</p>
+                    <p class="descricaoExperiencia" id="cargo"><b>Cargo: </b>Assitente Administrativo</p>
+                    <p class="descricaoExperiencia" id="atuacao"><b>Atuação: </b>Atuando na equipe de administração, configuração e suporte técnico ao Ambiente virtual de Aprendizagem e outros sistemas utilizados na instituição.</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="conteudo" id="conteudoCursos">
+                <h2 class="nomeInformacao" id="informacoes4">Cursos:</h2>
+                <div class="descricaoConteudo" id="descricaoConteudoCursos">
+                    <p class="curso"><b>Excel avançado </b>(FAETEC unidade Pedro Ramos – conclusão em 2016);</p>
+                    <p class="curso"><b>Inglês </b>(Fundec – incompleto). </p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="conteudo" id="conteudoCertificados">
+                <h2 class="nomeInformacao" id="informacoes4">Certificados:</h2>
+                <ul  class="conteudoTopico" id="topicoCertificados">
+                    <li class="conteudoNomeCertificados"><a class="nomeCertificado" href="img/certificados/LGPD.pdf" target="blank">Lei Geral de Proteção de Dados - LGPD</a></li>
+                    <li class="conteudoNomeCertificados"><a class="nomeCertificado" href="img/certificados/BVI_Frente.jpg" target="blank">Briagada Voluntária de Incêndio - BVI</a></li>
+                    <li class="conteudoNomeCertificados"><a class="nomeCertificado" href="img/certificados/Exercito.jpg" target="blank">Formação Militar</a></li>
+                    <li class="conteudoNomeCertificados"><a class="nomeCertificado" href="img/certificados/Administracao_Frente.jpeg" target="blank">Técnico de Administração</a></li>
+                </ul>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="conteudo" id="conteudoConhecimentos">
+                <div  id="nomeConteudoConhecimentos">
+                    <h2 class="nomeInformacao" id="informacoes5">Conhecimentos e Ferramentas:</h2>
+                        <ul  class="conteudoTopico" id="topicoConhecimentos">
+                            <li class="conhecimento">HTML</li>
+                            <li class="conhecimento">CSS</li>
+                            <li class="conhecimento">JavaScript</li>
+                            <li class="conhecimento">SQL</li>
+                            <li class="conhecimento">LMS</li>
+                            <li class="conhecimento">Microsoft Word</li>
+                            <li class="conhecimento">Microsoft PowerPoint</li>
+                            <li class="conhecimento">Microsoft Excel - Avançado</li>
+                            <li class="conhecimento">Power BI</li>
+                            <li class="conhecimento">Blackboard Learn</li>
+                            <li class="conhecimento">PostgreSQL</li>
+                            <li class="conhecimento">GLPI</li>
+                            <li class="conhecimento">Hubspot</li>
+                            <li class="conhecimento">Prova Fácil</li>
+                            <li class="conhecimento">Microsoft Visual Studio Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="conteudo" id="conteudoCompetencias">
+                <div  id="nomeConteudoCompetencias">
+                    <h2 class="nomeInformacao" id="informacoes5">Competências:</h2>
+                        <ul  class="conteudoTopico" id="topicoCompetencias">                    
+                            <li class="competencia">Gestão de projetos</li>
+                            <li class="competencia">Planejamento de projetos</li>
+                            <li class="competencia">Proatividade</li>
+                            <li class="competencia">Agilidade</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="conteudo" id="conteudoDownload">
+                <div  id="nomeConteudoDownload">
+                    <h2 clas#D31C5B
+                    #D31C5Bs="nomeInformacao" id="informacoes5">Download do Curriculo:</h2>
+                    <div class="download">
+                        <input type="button" value="Salvar PDF / Imprimir" onclick="window.print()" class="botao" id="botaoImprimir">
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        
+        <section class="conteudoBotao" id="conteudoBotaoTopo">
+            <a href="#conteudoInformacoesPessoal" id="linkBotaoInicioPagina"><span class="material-icons" id="botaoInicioPagina" onclick="botaoInicioPagina()">arrow_upward</span></a>
+        </section>
+
+
+
+        <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	    <script type="text/javascript" src="script.js"></script>
+        
+    </body>
+</html>
