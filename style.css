@@ -353,14 +353,14 @@ body::-webkit-scrollbar-thumb {
     right: 0%;
     padding: 5px;
 }
-#botaoInicioPagina{
+#botaoInicioConteudo{
     color: rgba(255, 255, 255, 0.542);
     font-size: 28px;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.494);
     border-radius: 10px;
 }
-#botaoInicioPagina:hover{
+#botaoInicioConteudo:hover{
     color: #000;    
     background-color: rgba(0, 0, 0, 0.694);
 }

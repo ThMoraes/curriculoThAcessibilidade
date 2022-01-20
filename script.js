@@ -102,7 +102,18 @@ function acessibilidadeConteudo(){
 
 function altoContraste(){
     var css = document.getElementById('css');
-    css.href="altoContraste.css";
+    var str = $(css).attr('href');
+    var arr = str.split(" ");
+    var res = arr[0];
+
+    if( res == "altoContraste.css"){
+        var css = document.getElementById('css');
+        css.href="style.css";
+    }
+    else{ 
+        var css = document.getElementById('css');
+        css.href="altoContraste.css";
+    }
 }
 
 
@@ -149,7 +160,6 @@ $('#linkBotaoInicioConteudo').click(function(e){
         scrollTop: targetOffset - menuHeight
     },/*velocidade da animação*/900);
 });
-
 
 $('#menuConteudo1').hover(function(){
     $('#menuConteudo1 .conteudoNomeMenuConteudo').toggleClass('conteudoNomeMenuConteudoHover');
