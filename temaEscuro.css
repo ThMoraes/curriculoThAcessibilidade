@@ -14,8 +14,7 @@ a{
 
 /* barra de rolagem */
 body{
-    color: #ffffff;
-	background-color: #000000;
+	background:url(img/backgroundTH.png) repeat-x fixed;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -131,7 +130,7 @@ body::-webkit-scrollbar-thumb {
     padding-top: 54px;
     height: 100vh;
     width: 100%;
-    background-color: #002143; 
+    background-color: #1E90FF; 
 }
 
 .acessibilidadeConteudos{
@@ -141,7 +140,9 @@ body::-webkit-scrollbar-thumb {
 .acessibilidadeConteudo{
     padding: 5px 5px;
     padding-left: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 .acessibilidadeConteudoOver{
     background-color: #87CEFA;
@@ -152,15 +153,16 @@ body::-webkit-scrollbar-thumb {
 }
 .nomeAcessibilidadeConteudo{
     font-size: 20px;
-    color: #ffffff;
+    color: #000000;
     font-weight: bolder;
     padding-left: 5px;
+    padding-right: 30px;
+
 }
 
-.iconeAcessibilidade2On{
-    color: rgb(0, 194, 13);
+.iconeAcessibilidade1On, .iconeAcessibilidade2On{
+    color: rgb(76, 255, 88);
 }
-
 /* menu */
 .menu{
     display: none;
@@ -170,7 +172,7 @@ body::-webkit-scrollbar-thumb {
     padding-top: 54px;
     height: 100vh;
     width: 100%;
-    background-color: #002143; 
+    background-color: #1E90FF; 
 }
 .menuConteudos{
     margin-top: 15px;
@@ -183,8 +185,8 @@ body::-webkit-scrollbar-thumb {
     padding-left: 20px;
     display: flex;
 }
-.conteudoNomeMenuConteudoHover{
-    background-color: #000000;
+.conteudoNomeMenuConteudoOver{
+    background-color: #87CEFA;
     padding: 5px 5px;
     padding-left: 7px;
     margin-left: 25px;
@@ -192,16 +194,17 @@ body::-webkit-scrollbar-thumb {
 }
 .nomeMenuConteudo{
     font-size: 20px;
-    color: #ffffff;
+    color: #000000;
     font-weight: bolder;
     padding-left: 5px;
 }
 .iconeMenu{
-    color: #ffffff;
+    color: #000000;
 }
 
 /*geral*/
 .conteudos{
+    background-color: rgba(255, 255, 255, 0.742);
     margin: auto;    
 }
 .conteudosOcultar{
@@ -223,36 +226,36 @@ body::-webkit-scrollbar-thumb {
 #informacoesPessoal1{
     margin: auto 10px;
 }
-.nomeDono{
-    font-size: 45px;
-    padding-bottom: 10px;
-}
-.descriacaoPessoal{
-    font-size: 20px;
-    padding: 5px 0px;
-}
-.nomeInformacao{
-    font-size: 27px;
-    padding-top: 20px;
-}
-.descricaoPerfilProfissional{
-    font-size: 20px;
-    padding: 5px 0px;
-    text-indent: 30px;
-    text-align: justify;
-}
+    .nomeDono{
+        font-size: 45px;
+        padding-bottom: 10px;
+    }
+    .descriacaoPessoal{
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    .nomeInformacao{
+        font-size: 27px;
+        padding-top: 20px;
+    }
+    .descricaoPerfilProfissional{
+        font-size: 20px;
+        padding: 5px 0px;
+        text-indent: 30px;
+        text-align: justify;
+    }
 
 #informacoesPessoal2{
     display: flex;
     justify-content: center;
     margin: auto;
 }
-#fotoDono{
-    width: 70%;
-    height: auto;
-    padding: 10px;
-    border-radius: 25px;
-}
+    #fotoDono{
+        width: 70%;
+        height: auto;
+        padding: 10px;
+        border-radius: 25px;
+    }
 
 
 /*conteudoRedes*/
@@ -302,7 +305,7 @@ body::-webkit-scrollbar-thumb {
 
 /*conteudoCertificado*/
 .nomeCertificado{
-    color: #ffffff;
+    color: #000000;
     text-decoration: underline #1E90FF 3px;
 }
 .conteudoNomeCertificados{
@@ -375,14 +378,14 @@ body::-webkit-scrollbar-thumb {
     right: 0%;
     padding: 5px;
 }
-#botaoInicioPagina{
+#botaoInicioConteudo{
     color: rgba(255, 255, 255, 0.542);
     font-size: 28px;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.494);
     border-radius: 10px;
 }
-#botaoInicioPagina:hover{
+#botaoInicioConteudo:hover{
     color: #000;    
     background-color: rgba(0, 0, 0, 0.694);
 }
