@@ -100,7 +100,7 @@ function acessibilidadeConteudo(){
     }
 };
 
-function altoContraste(){
+/* function altoContraste(){
     var css = document.getElementById('css');
     var str = $(css).attr('href');
     var arr = str.split(" ");
@@ -110,7 +110,22 @@ function altoContraste(){
         var css = document.getElementById('css');
         css.href="style.css";
     }
-    else{ 
+    else if( res == "style.css"){
+        var css = document.getElementById('css');
+        css.href="altoContraste.css";
+    }
+} */
+
+function altoContraste(){
+    var str = document.getElementById('css').getAttribute("href");
+    var arr = str.split(" ");
+    var res = arr[0];
+
+    if( res == "altoContraste.css"){
+        var css = document.getElementById('css');
+        css.href="style.css";
+    }
+    else if( res == "style.css"){
         var css = document.getElementById('css');
         css.href="altoContraste.css";
     }
